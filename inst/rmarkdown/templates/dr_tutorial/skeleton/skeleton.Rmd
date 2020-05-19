@@ -1,0 +1,23 @@
+---
+title: "A Tutorial"
+subtitle: "An author"
+output: 
+    learnr::tutorial:
+        css: styles.css
+        toc: true
+        toc_depth: 2
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = TRUE, fig.width = 12)
+library(rlang)
+```
+
+
+## Topic 1 
+
+
+
+## Topic 2
