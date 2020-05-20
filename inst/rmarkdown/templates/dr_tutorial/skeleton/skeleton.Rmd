@@ -3,9 +3,7 @@ title: "A Tutorial"
 subtitle: "An author"
 output: 
     learnr::tutorial:
-        css: styles.css
-        toc: true
-        toc_depth: 2
+      css: css/styles.css
 runtime: shiny_prerendered
 ---
 
