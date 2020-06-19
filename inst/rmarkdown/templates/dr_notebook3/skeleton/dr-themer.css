@@ -47,7 +47,7 @@
   --header-color: #2180CE;
   --background-color: #FFFFFF;
   --link-color: #2180CE;
-  --text-bold-color: #2180CE;
+  --text-bold-color: #D17529;
   --code-highlight-color: rgba(255,255,0,0.5);
   --inverse-text-color: #000000;
   --inverse-background-color: #D17529;
@@ -81,7 +81,7 @@ h1, h2 {
 h3 {
   font-family: var(--header-font-family);
   font-weight: 600;
-  color: #D17529;
+  color: var(--header-color);
 }
 .remark-slide-content {
   background-color: var(--background-color);
