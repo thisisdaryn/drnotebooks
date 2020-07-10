@@ -18,18 +18,67 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE,
+                      message = FALSE,
                       comment = "")
+xaringanExtra::use_tile_view()
+xaringanExtra::use_panelset()
+xaringanExtra::use_webcam()
+xaringanExtra::use_editable()
 ```
 
 
 
 
+## A panelset example 
 
-# H1 
+.panelset[
+.panel[.panel-name[Code]
 
-## H2 
+```{r eval = FALSE}
+library(ggplot2)
+library(palmerpenguins)
 
-### H3 
+ggplot(data = penguins,
+       aes(x = body_mass_g,
+           y = bill_length_mm,
+           color = species,
+           shape = sex)) + 
+  geom_point() + 
+  theme_bw()
+```
 
-#### H4 
+
+]
+.panel[.panel-name[Plot]
+
+```{r echo = FALSE}
+library(ggplot2)
+library(palmerpenguins)
+
+ggplot(data = penguins,
+       aes(x = body_mass_g,
+           y = bill_length_mm,
+           color = species,
+           shape = sex)) + 
+  geom_point() + 
+  theme_bw()
+```
+
+]
+
+]
+
+---
+## Editable example 
+
+This is .can-edit[editable]
+
+
+.can-edit[
+- one
+- 2
+- III
+
+]
 
