@@ -1,4 +1,4 @@
-name: dr_notebook3
+name: dr_notebook
 description: >
    A template for R Markdown notebooks by Daryn Ramsden
 create_dir: FALSE
