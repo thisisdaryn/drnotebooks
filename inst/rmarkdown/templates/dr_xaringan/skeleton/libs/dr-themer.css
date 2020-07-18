@@ -46,6 +46,7 @@
   --text-color: #000000;
   --header-color: #2180CE;
   --background-color: #FFFFFF;
+  --alternate-color: #022B3A;
   --link-color: #2180CE;
   --text-bold-color: #2180CE;
   --code-highlight-color: rgba(255,255,0,0.5);
@@ -62,6 +63,26 @@
   --black: #000000;
 }
 
+
+.dark-mode {
+  --text-color: #E1E5F2;
+  --header-color: #997E91;
+  --background-color: #022B3A;
+  --alternate-color: #FFFFFF;
+  --link-color: #2180CE;
+  --text-bold-color: #511730;
+  --code-highlight-color: rgba(255,255,0,0.5);
+  --title-slide-background-color: #022B3A;
+  --title-slide-text-color: #997E91;
+  --header-background-color: #2180CE;
+  --header-background-text-color: #FFFFFF;
+  --primary: #2180CE;
+  --secondary: #D17529;
+  --white: #E1E5F2;
+  --black: #000000;
+}
+
+
 html {
   font-size: var(--base-font-size);
 }
@@ -76,6 +97,7 @@ h1, h2 {
   font-weight: 600;
   color: var(--header-color);
 }
+
 
 
 h3 {
