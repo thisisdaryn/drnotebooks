@@ -7,12 +7,14 @@ institution: ""
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: dr-themer.css
+    css: libs/dr-themer.css
     chakra: libs/remark.js
     nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+    includes:
+      after_body: libs/toggle.html
 ---
 
 
