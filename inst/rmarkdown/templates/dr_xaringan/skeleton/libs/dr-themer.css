@@ -48,8 +48,10 @@
   --background-color: #FFFFFF;
   --alternate-color: #022B3A;
   --link-color: #2180CE;
-  --text-bold-color: #2180CE;
+  --text-bold-color: #D17529;
   --code-highlight-color: rgba(255,255,0,0.5);
+  --code-background-color: #F0F0F0;
+  --code-color: #000000;
   --inverse-text-color: #000000;
   --inverse-background-color: #D17529;
   --inverse-header-color: #000000;
@@ -64,22 +66,26 @@
 }
 
 
+
+
 .dark-mode {
-  --text-color: #E1E5F2;
-  --header-color: #997E91;
-  --background-color: #022B3A;
+  --text-color: #FFFCF9;
+  --header-color: #EF6F6C;
+  --background-color: #393E41;
   --alternate-color: #FFFFFF;
   --link-color: #2180CE;
-  --text-bold-color: #511730;
-  --code-highlight-color: rgba(255,255,0,0.5);
-  --title-slide-background-color: #022B3A;
-  --title-slide-text-color: #997E91;
+  --text-bold-color: #FCBA04;
+  --code-highlight-color: #FCBA04;
+  --title-slide-background-color: #393E41;
+  --title-slide-text-color: #EF6F6C;
   --header-background-color: #2180CE;
   --header-background-text-color: #FFFFFF;
   --primary: #2180CE;
   --secondary: #D17529;
-  --white: #E1E5F2;
-  --black: #000000;
+  --white: #000000;
+  --black: ##E1E5F2;
+  --code-background-color: #3E566D;
+  --code-color: #FFFFFF;
 }
 
 
@@ -126,6 +132,7 @@ h3 {
 }
 .remark-code {
   font-size: var(--code-font-size);
+  background-color: #54577C;
 }
 .remark-inline-code {
   font-size: var(--code-inline-font-size);
@@ -288,4 +295,7 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 .bg-black {
   background-color: var(--black);
 }
-
+code.r.hljs.remark-code{
+  background-color: var(--code-background-color);
+  color: var(--code-color);
+}
